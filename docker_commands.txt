@@ -12,3 +12,7 @@ docker build -t first - < Dockerfile
 
 # Run docker container from a docker image
 docker container run first
+docker container run -it first    # access command line
+cat /etc/*release     # ubuntu version
+exit
+docker container stop CONTAINER_ID
