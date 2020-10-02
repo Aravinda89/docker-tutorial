@@ -20,3 +20,4 @@ cat /etc/*release     # ubuntu version
 exit
 docker container stop CONTAINER_ID
 docker container kill CONTAINER_ID
+docker rm $(docker ps -aq)   # delete all docker containers
