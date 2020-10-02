@@ -1,2 +1,2 @@
-# docker-tutotial
+# docker-tutorial
 docker for data science
