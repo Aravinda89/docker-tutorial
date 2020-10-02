@@ -1,2 +1,2 @@
-FROM ubuntu:18.10
-RUN apt update && apt install -y python3
+FROM ubuntu:19.10
+RUN apt-get update && apt-get install -y locales && apt-get install -y python3
