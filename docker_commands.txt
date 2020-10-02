@@ -30,3 +30,4 @@ docker tag IMAGE_ID userID/mhw
 docker push userID/mhw:latest
 
 docker run -it -v /Users/ag/doc/mount_dic:/data dev-env bash
+docker run -it -v /Users/ag/doc/mount_dic:/data -p 8888:8888 dev-env
