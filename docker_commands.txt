@@ -16,3 +16,4 @@ docker container run -it first    # access command line
 cat /etc/*release     # ubuntu version
 exit
 docker container stop CONTAINER_ID
+docker container kill CONTAINER_ID
