@@ -8,7 +8,7 @@ docker image ls -a         #Includes intermediate images
 docker image ls
 docker image rm IMAGE_ID
 
-docker ps -aq
+docker ps -aq              # All docker container IDs
 docker contianer ls -a
 docker container ls -aq    # contianer IDs
 
@@ -21,13 +21,16 @@ docker container run first
 docker container run -it first    # access command line
 cat /etc/*release     # ubuntu version
 exit
+
 docker container stop CONTAINER_ID
 docker container kill CONTAINER_ID
 docker rm $(docker ps -aq)   # delete all docker containers
 
+# push to docker repo
 docker login
-docker tag IMAGE_ID userID/mhw
+docker tag IMAGE_ID userID/mhw  #tag docker img
 docker push userID/mhw:latest
 
 docker run -it -v /Users/ag/doc/mount_dic:/data dev-env bash
+#expose a port
 docker run -it -v /Users/ag/doc/mount_dic:/data -p 8888:8888 dev-env
