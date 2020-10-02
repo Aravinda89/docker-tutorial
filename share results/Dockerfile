@@ -7,7 +7,7 @@ LABEL description="Noteboook and data (.csv file) to provide a summary \
 
 WORKDIR /data
 
-COPY . /data
+VOLUME . /data
 
 RUN pip install numpy pandas==0.24.2 seaborn jupyter
 
