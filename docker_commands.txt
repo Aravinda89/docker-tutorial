@@ -6,6 +6,9 @@ docker image ls -a         #Includes intermediate images
 docker image ls
 docker image rm IMAGE_ID
 
+docker ps -aq
+docker contianer ls -a
+
 # Build a docker image from a Dockerfile
 docker build -t first .
 docker build -t first - < Dockerfile
