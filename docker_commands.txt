@@ -24,3 +24,7 @@ exit
 docker container stop CONTAINER_ID
 docker container kill CONTAINER_ID
 docker rm $(docker ps -aq)   # delete all docker containers
+
+docker login
+docker tag IMAGE_ID userID/mhw
+docker push userID/mhw:latest
