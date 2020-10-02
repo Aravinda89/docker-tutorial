@@ -2,6 +2,9 @@ docker info
 docker pull hello-world
 docker pull ubuntu:18.10
 
-docker image ls -a  #includes intermediate images
+docker image ls -a         #Includes intermediate images
 docker image ls
 docker image rm IMAGE_ID
+
+# Build a docker image from a Dockerfile
+docker build -t first .
