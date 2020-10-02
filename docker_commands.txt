@@ -8,5 +8,4 @@ docker image rm IMAGE_ID
 
 # Build a docker image from a Dockerfile
 docker build -t first .
-docker build - < Dockerfile
 docker build -t first - < Dockerfile
