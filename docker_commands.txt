@@ -1,3 +1,6 @@
 docker info
 docker pull hello-world
 docker pull ubuntu:18.10
+
+docker image ls -a  #includes intermediate images
+docker image ls
